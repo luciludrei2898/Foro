@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+    <script src="Assets/scripts/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div id="div_logo" onclick="fMostrarHome()"><img src="Assets/img/logo_2 (5).png" alt=""></div>
+        <div id="div_login" onclick="fMostrarLogin()"><img src="Assets/img/usuario.png" alt=""></div>
+        <div id="div_menu" onclick="fMostrarTematicas()"><img src="Assets/img/menu.png" alt=""></div>
+    </header>
+    <nav>
+    </nav>
+    <section>
+    <div id="menu_categorias">
+        <div id="div_amigos"><img id="grupo_amigos" src="Assets/img/extraterrestres.png" alt=""></div>
+       <div id="div_titulo">
+            Descubre todas nuestras categorías
+        </div>
+       <div id="div_descripcion_categoria"> Desafiando fronteras, explorando ideas: En el Foro de Temáticas Diversas, tu curiosidad encuentra un espacio sin límites para crecer.</div>
+        <div id="div_categorias"></div>
+        <div id="div_descripcion_categoria"> ¿Te gustaría hablar de otras temáticas? Escríbenos a info@forodelucie.com con algunas de ellas para abrir la categoría. ¡No tengas vergüenza!</div>
+    </div>
+    <div id="modal_tema">
+        <div id="div_titulo_tematica"></div>
+        <!-- Aqui es donde se imprimen los mensajes -->
+        <div id="div_publicaciones"></div>
+        <div id="div_publicar">
+            <div id="div_cabecera"><div id="div_bocadillo"><img id="bocadillo" src="Assets/img/comentarios.png" alt=""></div><div id="titulo_publicacion">Y tú, ¿qué opinas?</div></div>
+            <div id="div_cajon"><input type="text" name="" id="mensaje"></div>
+            <div id="div_boton_foro"><div id="div_boton_crear_mensaje" onclick="fPublicar()">Publicar</div></div>
+        </div>
+    </div>
+    <div id="modal_registro">
+            <div id="div_formulario">
+                <img id="monstruo" src="Assets/img/monstruo (1).png" alt="">
+            </div>
+            <div id="div_titulo">
+                ¡Bienvenido de nuevo! &#128513;
+            </div>
+            <div id="div_error"></div>
+            <div class="div_formulario">
+                <div class="div_tipo">Username</div>
+                <input type="text" name="" id="alias">
+            </div>  
+            
+            <div class="div_formulario">
+                <div class="div_tipo">Contraseña</div>
+                <input type="password" name="" id="password">
+            </div>
+    
+            <div class="div_formulario">
+             <div id="div_boton_crear_cuenta" onclick="fLogin()">Acceder</div>  
+            </div>
+            <div class="div_formulario_cuenta">
+                <div class="div_tipo">¿Aún no tienes cuenta?</div>
+                <div id="div_amigos"><img id="grupo_amigos" src="Assets/img/extraterrestres.png" alt=""></div>
+                <div id="div_boton_registro" onclick="fMostrarRegistro()">Regístrate aquí</div>
+            </div>
+            <div id="div_bloque4">
+                <img src="Assets/img/meteorito.png" alt="">
+            </div>
+    </div>
+    <div id="modal_bienvenida">
+        <div id="div_bienvenida"></div>
+         <div id="div_bloque1">
+            Universo de Ideas: Explora, aprende y comparte con otros
+        </div>
+        <div id="div_bloque_extra">
+            <img src="Assets/img/extraterrestres.png" alt="">
+        </div>
+        <div id="div_bloque2">
+            <div id="div_cohete"><img src="Assets/img/cohete copia 2.png" alt=""></div>
+            <div id="div_descripcion">Participa en debates apasionantes, aprende de expertos en diferentes áreas y comparte tus conocimientos con otros. Aquí no hay reglas, solo pasión por el conocimiento y la conversación.
+            </div>
+        </div>
+        <div id="div_bloque3">
+            <div id="div_titulo2">¿Te unes a la conversación? &#9996;</div>
+            <div id="div_descripcion2">¿Te consideras un experto en un tema? Comparte tu sabiduría con el mundo. ¿Simplemente quieres pasar un buen rato leyendo opiniones locas? ¡También tenemos eso!</div>
+            <div id="div_boton"><div id="div_boton_tematicas" onclick="fMostrarTematicas()">Ver Temáticas</div></div>
+        </div>
+        <div id="div_bloque4">
+            <img src="Assets/img/meteorito.png" alt="">
+        </div>      
+        </div>
+    <div id="modal_nueva_cuenta">
+        <div id="div_formulario">
+            <img id="monstruo" src="Assets/img/extraterrestre.png" alt="">
+        </div>
+        <div id="div_titulo">
+            Comparte tus ideas  &#128752;
+        </div>
+        <div class="div_formulario">
+            <div class="div_tipo">Nombre *</div>
+            <input type="text" name="" id="nombre">
+        </div>
+
+        <div class="div_formulario">
+            <div class="div_tipo">Username *</div>
+            <input type="text" name="" id="aliasR">
+        </div>  
+        
+        <div class="div_formulario">
+            <div class="div_tipo">Email *</div>
+            <input type="text" name="" id="email">
+        </div>
+        
+        <div class="div_formulario">
+            <div class="div_tipo">Contraseña *</div>
+            <input type="password" name="" id="passwordR">
+        </div> 
+
+         <div class="div_formulario">
+            <div class="div_tipo">Repetir la contraseña *</div>
+            <input type="password" name="" id="passwordR2">
+        </div>
+        
+        <div class="div_formulario_foto">
+            <div class="div_tipo"> Elige tu Avatar *</div>
+            <div id="div_circulos">
+                <div><img src="Assets/img/1.png" alt="" class="foto" onclick="fotoUsuarioElegida = '1.png'"></div>
+                <div><img src="Assets/img/2.png" alt="" class="foto" onclick="fotoUsuarioElegida = '2.png'"></div>
+                <div><img src="Assets/img/3.png" alt="" class="foto" onclick="fotoUsuarioElegida = '3.png'"></div>                
+                <div><img src="Assets/img/4.png" alt="" class="foto" onclick="fotoUsuarioElegida = '4.png'"></div>
+                <div><img src="Assets/img/5.png" alt="" class="foto" onclick="fotoUsuarioElegida = '5.png'"></div>
+                <div><img src="Assets/img/6.png" alt="" class="foto" onclick="fotoUsuarioElegida = '6.png'"></div>
+            </div>
+        </div>
+        <div class="div_formulario">
+        <div id="texto_condiciones">* Al crear la cuenta aceptas la Política de Privacidad y recibir comunicaciones comerciales y newsletters. </div>
+         <div id="div_mensaje"></div>  
+         <div id="div_boton_crear_cuenta" onclick="fRegistro()">Crear cuenta</div>
+        </div>
+        <div id="div_bloque4">
+            <img src="Assets/img/meteorito.png" alt="">
+        </div>
+    </div>
+    <div id="modal_perfil">
+        <div id="div_foto"></div>
+        <div id="div_usu"></div>
+        <div id="div_nombre"></div>
+        <div id="div_email"></div>
+        <div id="div_cerrar_sesion"><div id="div_boton_cerrar_sesion" onclick="fCerrarSesion()">Cerrar sesión</div></div> 
+        <div id="div_publicar_nuevo_tema">
+            <div class="div_tema">Introduce un tema nuevo: </div>
+            <input type="text" id="tema">
+            <br>
+            <div id="div_cajon_tema"><div id="div_boton_crear_tema" onclick="fCrearTema()">Crear tema</div></div>
+        </div>
+        <div id="div_borrar_nuevo_tema">
+            <div class="div_tema">Introduce el tema a eliminar: </div>
+            <input type="text" id="tema_borrar">
+            <br>
+            <div id="div_cajon_tema_borrar"><div id="div_boton_borrar_tema" onclick="fBorrarTema()">Borrar tema</div></div>
+        </div>
+        <div id="div_bloque4">
+            <img src="Assets/img/meteorito.png" alt="">
+        </div> 
+    </div>
+    </section>
+    <footer>
+        &copy LSR-Marzo2024
+    </footer>
+</body>
+</html>

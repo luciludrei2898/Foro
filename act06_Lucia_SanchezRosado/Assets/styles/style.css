@@ -1,0 +1,1109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 40px;
+    grid-template-areas: 
+    "zh"
+    "zs"
+    "zf";
+}
+
+/* HEADER */
+
+header{
+    grid-area: zh;
+    background-color: #6C7ED6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+/* LOS DIVS DEL HEADER */
+
+#div_logo{
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 60%;
+}
+
+#div_logo:hover{
+    cursor: pointer;
+}
+
+#div_login{
+    padding-top: 15px;
+    padding-left: 30px;
+    width: 20%;
+}
+
+#div_login:hover{
+    cursor: pointer;
+}
+#div_menu:hover{
+    cursor: pointer;
+}
+
+#div_menu{
+    padding-top: 15px;
+    padding-left: 20px;
+    width: 20%;
+}
+
+#div_login > img{
+    width: 35px;
+}
+#div_menu > img{
+    width: 35px;
+
+}
+
+/*EL SECTION*/
+section {
+    grid-area: zs;
+    background-color: #6C7ED6;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*VENTANAS MODALES*/
+
+/* MODAL TEMA */
+
+#modal_tema{
+    height: 100%;
+    width: 100%;
+    background-color: #6C7ED6;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#div_titulo_tematica{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_descripcion_tematica{
+    font-size: 20px;
+    font-weight: lighter;
+    padding-bottom: 30px;
+    color: black;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#div_publicar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#div_publicaciones{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_publicacion{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 350px;
+    padding: 30px;
+}
+
+.div_info{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+
+.basura{
+    width: 15px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+}
+
+.div_user{
+    width: 200px;
+    height: auto;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 30px;
+}
+.div_fecha{
+    width: 300px;
+    height: auto;
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.div_texto{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: left;
+    text-align: left;
+    border-radius: 5px;
+}
+
+#div_cajon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#div_cajon > input{
+    width: 100%;
+    height: 140px;
+    border-radius: 5px;
+    align-items: normal;
+    justify-content: left;
+
+}
+
+#titulo_publicacion{
+    font-size: 33px;
+    font-weight: bold;
+    color: #fff;
+    width: 60%;
+    height: 50px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+}
+
+#div_cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_bocadillo{
+    width: 25;
+}
+
+#bocadillo{
+    width: 60px;
+    padding-right: 20px;
+}
+
+#div_boton_foro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* MODAL PERFIL USUARIO */
+
+#modal_perfil{
+    height: 100%;
+    width: 100%;
+    background-color: #6C7ED6;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#div_publicar_nuevo_tema{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+#div_borrar_nuevo_tema{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+#div_espacio{
+    width: 100%;
+    height: 100px;
+}
+
+#div_cajon_tema{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+#div_boton_crear_tema{
+    background-color: #60B8FE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    z-index: 1;
+}
+
+#div_boton_crear_tema:hover{
+    background-color: #4C5999;
+    cursor: pointer;
+}
+
+#div_cajon_tema_borrar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 70px;
+}
+
+#div_boton_borrar_tema{
+    background-color: #60B8FE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    z-index: 1;
+}
+
+#div_boton_borrar_tema:hover{
+    background-color: #4C5999;
+    cursor: pointer;
+}
+
+#div_mensajes_usu{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_usu{
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+#div_nombre{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;  
+}
+
+#div_email{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#div_cerrar_sesion{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_boton_cerrar_sesion{
+    background-color: #60B8FE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    z-index: 1;
+}
+
+#div_boton_cerrar_sesion:hover{
+    background-color: #4C5999;
+    cursor: pointer;
+}
+
+#div_foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+#div_foto > img{
+    width: 200px;
+}
+
+.div_tema{
+    width: 100%;
+    font-weight: lighter;
+    font-style: inherit;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+
+/* MODAL REGISTRO */
+
+#modal_registro{
+    height: 100%;
+    width: 100%;
+    background-color: #6C7ED6;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#modal_bienvenida{
+    display: block;
+    flex-wrap: wrap;
+}
+
+#modal_nueva_cuenta{
+    height: 100%;
+    width: 100%;
+    background-color: #6C7ED6;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;    
+}
+
+#menu_categorias{
+    height: 100%;
+    width: 100%;
+    background-color: #6C7ED6;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
+}
+
+#div_categorias{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.div_tipo_categorias{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 70px;
+    margin: 15px;
+    background-color: #60B8FE;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.div_tipo_categorias:hover{
+    cursor: pointer;
+    background-color: #4C5999;
+}
+
+/* LOS DIVS DEL SECTION DE LA HOME */
+
+#div_bienvenida{
+    width: 100%;
+    height: 70px;
+    display: none;
+    align-items: center;
+    justify-content: right;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+#div_bloque1{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 40px;
+} 
+#div_bloque_extra{
+    display: none;
+}
+
+#div_bloque2{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#div_cohete{
+    width: 30%;
+    height: 200px;
+
+}
+#div_descripcion{
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: right;
+    padding-right: 40px;
+    width: 60%;
+    height: 120px;
+
+}
+#div_cohete > img{
+    width: 130px;
+}
+
+#div_bloque3{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#div_titulo2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-size: 35px;
+    justify-content: left;
+    padding-left: 40px;
+}
+
+#div_descripcion2{
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: left;
+    width: 60%;
+    height: 150px;
+    display: flex;
+    justify-content: right;
+    padding-left: 40px;
+}
+
+#div_boton{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    margin-left: 40px;
+}
+
+#div_bloque4{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+#div_bloque4 > img{
+    width: 180px;
+}
+
+/*DIVS DE LA PAGINA FORMULARIO*/
+
+#section_registro{
+    grid-area: zs;
+    background-color: #6C7ED6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_titulo{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#div_descripcion_categoria{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.div_formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.div_formulario_cuenta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+#div_amigos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#div_amigos > img{ 
+    width: 270px;
+}
+
+#monstruo{
+   width: 150px;
+   padding-top: 20px;
+}
+
+.div_tipo{
+    width: 100%;
+    font-weight: lighter;
+    font-style: inherit;
+    text-align: center;
+    font-size: 20px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.div_formulario_foto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+    margin: 20px;
+
+}
+
+#div_circulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+#div_circulos > div > img  {
+    width: 120px;
+}
+
+#div_circulos > div  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: 30px;
+    border-radius: 100px;
+}
+#texto_condiciones{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    margin: 30px;
+    height: 50px; 
+}
+
+#div_boton_crear_cuenta{
+    background-color: #60B8FE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    z-index: 1;
+}
+
+#div_boton_crear_mensaje{
+    background-color: #60B8FE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    z-index: 1;
+}
+
+#div_boton_crear_mensaje:hover{
+    cursor: pointer;
+    background-color: #4C5999;
+}
+
+#div_boton_crear_cuenta:hover{
+    cursor: pointer;
+    background-color: #4C5999;
+}
+#div_boton{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    background-color: #6C7ED6;
+}
+#div_boton_tematicas{
+    background-color: #60B8FE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    z-index: 1;
+}
+#div_boton_tematicas:hover{
+    cursor: pointer;
+    background-color: #4C5999;
+}
+#div_error{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    color: rgb(255, 255, 255);
+    color: 18px;
+    font-weight: bold;
+
+}
+
+#div_mensaje{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    color: rgb(255, 255, 255);
+    color: 18px;
+    font-weight: bold;
+}
+
+#div_boton_registro{
+    background-color: #60B8FE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    z-index: 1;
+}
+#div_boton_registro{
+    background-color: #60B8FE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    z-index: 1;
+}
+#div_boton_registro:hover{
+    cursor: pointer;
+    background-color: #4C5999;
+}
+/* PAGINA FORO */
+
+#div_tematica{
+    width: 80%;
+    font-size: 35px;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+#div_descripcion_tema{
+    width: 80%;
+    font-size: 25px;
+    height: 100px;
+    color: black;
+    text-align: center;
+}
+#div_n_publicaciones{
+    width: 80%;
+    font-size: 20px;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+#section_foro{
+    grid-area: zs;
+    background-color: #6C7ED6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_publicar{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#div_publicar > div{
+    width: 100%;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+#div_boton_publicar{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+}
+
+/* FOOTER */
+
+footer{
+    grid-area: zf;
+    background-color:  #4C5999; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width:700px) {
+
+    /*CAMBIOS HOME*/
+
+    /* CAMBIOS HEADER*/
+
+    #div_logo{
+        padding-left: 15px;
+        padding-top: 15px;
+        width: 70%;
+    }
+
+    #div_login{
+        padding-top: 15px;
+        padding-left: 30px;
+        width: 10%;
+    }
+    #div_menu{
+        padding-top: 15px;
+        padding-left: 20px;
+        width: 10%;
+    }
+
+    input{
+        width: 450px;
+    }
+
+    /* CAMBIOS SECTION */
+
+    #div_bienvenida{
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    #div_bloque1{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 50px;
+    } 
+
+    #div_bloque_extra{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #div_bloque_extra > img{
+        width: 420px;
+    }
+    
+
+    #div_bloque2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 250px;        
+    }
+
+    #div_descripcion{
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    #div_cohete{
+        display: none;
+    
+    }
+
+    #div_bloque3{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #div_titulo2{
+        font-size: 25px;
+        justify-content: center;
+    }
+    
+    #div_descripcion2{
+        width: 100%;
+        font-size: 18px;
+        padding-left: 0px;
+        text-align: center;
+        margin-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #div_circulos > div {
+        width: 100px;
+        height: 100px;
+    }
+
+    #div_descripcion_categorias{
+        width: 60%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    #div_boton{
+        justify-content: center;
+    }
+
+    .div_tipo_categorias{
+        width: 70%;
+    }
+
+    #div_cajon{
+        justify-content: left;
+    }
+    
+    
+    #titulo_publicacion{
+        justify-content: left;
+    }
+    
+    #div_cabecera{
+        justify-content: left;
+    }
+
+
+    #div_boton_foro{
+        justify-content: left;
+    }
+ }
+
+
+ @media screen and (min-width:1000px) {
+
+    #div_bloque1{
+        font-size: 45px;
+
+    } 
+
+    #div_descripcion{
+        font-size: 25px;
+
+    }
+    
+    #div_titulo2{
+        font-size: 40px;
+    }
+
+    #div_descripcion2{
+        font-size: 25px;
+        margin: 10px;
+
+    }
+
+    input{
+        width: 550px;
+    }
+
+ }
+
+
+@media screen and (min-width:1200px) {
+
+    #div_bloque1{
+        font-size: 45px;
+    } 
+
+    #div_descripcion{
+        font-size: 25px;
+
+    }
+
+    
+    #div_titulo2{
+        font-size: 40px;
+    }
+
+    #div_descripcion2{
+        font-size: 25px;
+        margin: 30px;
+    }
+
+ }
